@@ -7,7 +7,7 @@ import {
 
 import  { verifyToken} from "../middleware/auth.js";
 
-const router = express.Router;
+const router = express.Router();
 
 // Read
 

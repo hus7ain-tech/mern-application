@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "brcypt": "^1.0.1",
     "cors": "^2.8.5",
@@ -16,7 +17,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

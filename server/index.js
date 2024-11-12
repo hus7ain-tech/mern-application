@@ -8,11 +8,11 @@ import morgan from "morgan";
 import helmet from "helmet";
 import path from "path";
 import authRoutes from "./routes/auth.js"; 
-import userRoutes from "./routes/user.js";
+import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
 import { fileURLToPath } from "url";
-import {register} from "./controllers/auth.js";
-import {createPost } from "./controllers/posts.js";
+import {register} from "./controller/auth.js";
+import {createPost } from "./controller/posts.js";
 import { verifyToken } from "./middleware/auth.js";
 
 /*CONFIGRUTATION*/
