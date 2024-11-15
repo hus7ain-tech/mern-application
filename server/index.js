@@ -14,6 +14,9 @@ import { fileURLToPath } from "url";
 import {register} from "./controller/auth.js";
 import {createPost } from "./controller/posts.js";
 import { verifyToken } from "./middleware/auth.js";
+import User from "./models/User.js";
+import Post from "./models/Post.js";
+import { users,posts } from "./data/index.js";
 
 /*CONFIGRUTATION*/
 
@@ -56,4 +59,9 @@ const PORT = process.env.PORT || 6001;
 
 mongoose.connect(process.env.MONGO_URL,{}).then(()=>{
     app.listen(PORT, ()=> console.log(`Server Port : ${PORT}`));
+
+    //Add data one time
+    // User.insertMany(users);
+    // Post.insertMany(posts);
+
 }).catch((err) => console.log(`${err} Did not connect`)); 

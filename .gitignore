@@ -13,3 +13,4 @@ server/node_modules/
 # Build directories
 /dist
 /build
+data/index.js
