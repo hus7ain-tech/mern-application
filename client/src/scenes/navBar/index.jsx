@@ -50,7 +50,7 @@ const Navbar = () => {
   const lastName = 'husain'
 
   return (
-    <FlexBetween padding="2rem 6% backgroundColor={alt}">
+    <FlexBetween padding="2rem 6%" backgroundColor={alt}>
       <FlexBetween gap="1.75rem">
         <Typography 
           fontWeight="bold"
@@ -64,10 +64,10 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          FriendBook
         </Typography>
         {isNonMobileScreens && (
-          <FlexBetween background={neutralLight} borderRadius='9px' gap='3rem' padding='0.1rem 1.5rem'>
+          <FlexBetween backgroundColor={neutralLight} borderRadius='9px' gap='3rem' padding='0.1rem 1.5rem'>
             <InputBase placeholder='Search...'/>
             <IconButton>
               <Search/>
